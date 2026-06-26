@@ -1,0 +1,52 @@
+[project]
+name = "canal-cero-optimizacion-marketingdigital"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "arviz>=1.1.0",
+    "cfgv>=3.5.0",
+    "ipykernel>=7.2.0",
+    "ipython>=9.12.0",
+    "jax>=0.10.1",
+    "jaxlib>=0.10.1",
+    "jupyterlab>=4.5.6",
+    "kaleido>=1.2.0",
+    "matplotlib>=3.10.8",
+    "matplotlib-inline>=0.2.1",
+    "missingno>=0.5.2",
+    "numpy>=2.4.4",
+    "numpyro>=0.21.0",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.2",
+    "plotly>=6.7.0",
+    "pre-commit>=4.6.0",
+    "pymc>=5.26.1",
+    "requests>=2.33.1",
+    "ruff>=0.15.11",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
+    "shap>=0.52.0",
+    "statsmodels>=0.14.6",
+    "streamlit>=1.58.0",
+    "tensorflow>=2.21.0",
+    "tensorflow-probability>=0.25.0",
+]
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors: errores de estilo (indentación, espacios, etc.)
+    "W",   # pycodestyle warnings: advertencias de estilo menores
+    "F",   # pyflakes: imports no usados, variables indefinidas, nombres duplicados
+    "I",   # isort: orden y agrupación correcta de imports
+    "B",   # flake8-bugbear: patrones propensos a bugs y malas prácticas
+    "UP",  # pyupgrade: modernización automática de sintaxis a Python 3.12+
+]
+ignore = [
+    "E501", # line-too-long: largo de línea (delegado a ruff-format)
+]
