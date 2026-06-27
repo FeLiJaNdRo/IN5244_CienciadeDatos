@@ -33,6 +33,8 @@ dependencies = [
     "streamlit>=1.58.0",
     "tensorflow>=2.21.0",
     "tensorflow-probability>=0.25.0",
+    "umap-learn>=0.3.10",
+    "xgboost>=3.3.0",
 ]
 [tool.ruff]
 target-version = "py312"
